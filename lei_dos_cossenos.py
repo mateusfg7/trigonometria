@@ -6,11 +6,11 @@ class lei_cos:
     
         print("\n\033[00;36m❰\033[01;36mLEI DOS COSSENOS\033[00;36m❱\n")
 
-        # PEGA OS VALORES ADJACENTES AO ÂNGULO E O ÂNGULO
+        # PEGA OS VALORES NECESSÁRIOS
         try:
-            val_um = float(input('Valor adjacente 1 》 '))
-            val_dois = float(input('Valor adjacente 2 》 '))
-            val_angulo = float(input('Ângulo 》 '))
+            val_um = float(input('\033[00;36mValor da reta adjacente 1 》 \033[01;36m'))
+            val_dois = float(input('\033[00;36mValor da reta adjacente 2 》 \033[01;36m'))
+            val_angulo = float(input('\033[00;36mÂngulo 》 \033[01;36m'))
         except ValueError:
             print("Valores inválidos!")
             exit()
@@ -32,4 +32,4 @@ class lei_cos:
         x = math.sqrt(val_um_quad + val_dois_quad - 2 * val_um * val_dois * cos_angulo_f)
 
         # EXIBE O RESULTADO
-        print('\nx ≅ {:.2f}'.format(x))
+        print('\nx \033[00;36m≅ \033[01;36m{:.2f}'.format(x))

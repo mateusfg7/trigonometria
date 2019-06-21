@@ -7,4 +7,5 @@ arquivo principal: trigonometria.py
 
 calculos disponíveis:
 
-    leis dos cossenos
+    lei dos cossenos
+    lei dos senos
