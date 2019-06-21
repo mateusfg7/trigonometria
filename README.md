@@ -1,6 +1,9 @@
 # TRIGONOMETRIA
+SCRIPTS PYTHON PARA CÁLCULOS TRIGONOMÉTRICOS...
 
-scripts python para cálculos trigonométricos..
+arquivo principal: trigonometria.py
+
+
 
 calculos disponíveis:
 
