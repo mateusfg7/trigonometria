@@ -2,11 +2,14 @@ import math # IMPORTA BIBLIOTECA DE CALCULOS MATEMÁTICOS
 
 
 try:
+
+    print("\n\033[00;36m❰\033[01;36mLEI DOS COSSENOS\033[00;36m❱\n")
+
     # PEGA OS VALORES ADJACENTES AO ÂNGULO E O ÂNGULO
     try:
-        val_um = float(input('Valor 1: '))
-        val_dois = float(input('Valor 2: '))
-        val_angulo = float(input('Ângulo: '))
+        val_um = float(input('Valor adjacente 1 》 '))
+        val_dois = float(input('Valor adjacente 2 》 '))
+        val_angulo = float(input('Ângulo 》 '))
     except ValueError:
         print("Valores inválidos!")
         exit()
@@ -28,8 +31,8 @@ try:
     x = math.sqrt(val_um_quad + val_dois_quad - 2 * val_um * val_dois * cos_angulo_f)
 
     # EXIBE O RESULTADO
-    print('Resultado: {:.2f}'.format(x))
+    print('\nx ≅ {:.2f}'.format(x))
 
 except KeyboardInterrupt:
-    print('Saindo...\n')
+    print('\nSaindo...\n')
     exit()
