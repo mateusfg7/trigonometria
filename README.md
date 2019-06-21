@@ -1,4 +1,4 @@
-#TRIGONOMETRIA
+# TRIGONOMETRIA
 
 scripts python para cálculos trigonométricos..
 
