@@ -2,6 +2,7 @@
 SCRIPTS PYTHON PARA CÁLCULOS TRIGONOMÉTRICOS...
 
 arquivo principal: trigonometria.py
+versão otimizada: trig-otm.py
 
 
 
