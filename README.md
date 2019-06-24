@@ -10,3 +10,4 @@ calculos disponíveis:
 
     lei dos cossenos
     lei dos senos
+    area do triângulo

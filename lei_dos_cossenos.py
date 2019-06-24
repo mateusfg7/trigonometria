@@ -1,4 +1,4 @@
-import math # IMPORTA BIBLIOTECA DE CALCULOS MATEMÁTICOS
+import math 
 
 class lei_cos:
 
@@ -6,7 +6,6 @@ class lei_cos:
     
         print("\n\033[00;36m❰\033[01;36mLEI DOS COSSENOS\033[00;36m❱\n")
 
-        # PEGA OS VALORES NECESSÁRIOS
         try:
             val_um = float(input('\033[00;36mValor da reta adjacente 1 》 \033[01;36m'))
             val_dois = float(input('\033[00;36mValor da reta adjacente 2 》 \033[01;36m'))
@@ -16,19 +15,15 @@ class lei_cos:
             exit()
 
 
-        # CALCULA O QUADRADO DOS VALORES UM E DOIS
         val_um_quad = math.pow(val_um,2)
         val_dois_quad = math.pow(val_dois,2)
 
-        # CONVERTE O ANGULO EM GRAUS PARA RADIANO
-        val_angulo_rad = (val_angulo / 180) * math.pi
+        val_angulo_rad = (val_angulo / 180) * math.pi # conversão graus para radianos
 
-        # CALCULA O COSSENO DO ÂNGULO
         cos_angulo = math.cos(val_angulo_rad)
-        cos_angulo_f = float('{:.2f}'.format(cos_angulo))
+        cos_angulo_f = float('{:.2f}'.format(cos_angulo)) # formatado
 
 
-        # CALCULA O VALOR DE X
         x = math.sqrt(val_um_quad + val_dois_quad - 2 * val_um * val_dois * cos_angulo_f)
 
         # EXIBE O RESULTADO

@@ -4,9 +4,9 @@ import sys
 try:
     try:
         calc = sys.argv[1]
-        val1 = float(sys.argv[2])
-        val2 = float(sys.argv[3])
-        val3 = float(sys.argv[4])
+        valor_um = float(sys.argv[2])
+        valor_dois = float(sys.argv[3])
+        valor_tres = float(sys.argv[4])
     except ValueError:
         print("valor inválido!")
         exit()
@@ -33,21 +33,36 @@ try:
 
         print('x ≅ {:.2f}'.format(x))
 
+    
+    def area_tri(reta_a, reta_b, angulo):
+
+        angulo_rad = float('{:.2f}'.format((angulo / 180) * math.pi))
+        sen_angulo = float('{:.2f}'.format(math.sin(angulo_rad)))
+        area = (reta_a * reta_b * sen_angulo) / 2
+
+        print('área = {}'.format(area))
+
 
     if calc == "leiCos":
-        lei_cos(val1, val2, val3)
+        lei_cos(valor_um, valor_dois, valor_tres)
     elif calc == "leiSen":
-        lei_sen(val1, val2, val3)
+        lei_sen(valor_um, valor_dois, valor_tres)
+    elif calc == "areaTri":
+        area_tri(valor_um, valor_dois, valor_tres)
 
 
 except IndexError:
     print("\nUse trig-otm.py [calculo] [valor 1] [valor 2] [valor 3]")
     print("\nCalculos disponíveis:")
-    print(" leiCos - calcula usando a lei dos cossenos")
+    print(" \nleiCos - calcula usando a lei dos cossenos")
     print("   valor 1 = reta adjacente 1")
     print("   valor 2 = reta adjacente 2")
     print("   valor 3 = ângulo")
-    print(" leiSen - calcula usando a lei dos senos")
+    print(" \nleiSen - calcula usando a lei dos senos")
     print("   valor 1 = reta adjacente")
     print("   valor 2 = ângulo oposto a reta adjacente")
     print("   valor 3 = ângulo oposto a X")
+    print(" \nareaTri - calcula a área do triângulo")
+    print("   valor 1 = reta a")
+    print("   valor 2 = reta b")
+    print("   valor 3 = ângulo")
